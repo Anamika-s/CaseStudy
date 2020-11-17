@@ -1,6 +1,7 @@
 ﻿//Case Study 1
 using com.lti.casestudy.day1;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,35 @@ namespace com.lti.casestudy.day1
 
         static void Main()
         {
-            scenario1();
+            Hashtable ht = new Hashtable();
+            ht[1] = 20;
+            ht[2] = 30;
+            ht[3] = 89;
+
+            foreach (int temp in ht.Keys)
+            {
+                Console.WriteLine(temp);
+            }
+
+
+            //ArrayList list = new ArrayList();
+            //list.Add(1);
+            //list.Add(2);
+            //list.Add(3);
+            //list.Add(4);
+            //list.Add(5);
+
+
+
+
+            //list.Insert(1, 10);
+            //list.RemoveAt(2);
+            //list.Remove(5);
+
+            //foreach (int temp in list)
+            //    Console.WriteLine(temp);
+
+            // scenario1();
         }
         static void scenario1()
         {
@@ -134,7 +163,4 @@ namespace com.lti.casestudy.day1
         //}
     }
     }
-}
-
-
  
